@@ -25,7 +25,7 @@ Funcionalidade: CEP
   @cep_invalido
   Cenário: Validar API Correios quando for inserido um CEP inválido
     Dado que eu tenha um CEP padrão
-      | cep | 0000000 |
+      | cep | 00000000 |
     Quando realizar uma requisição passando um CEP válido
     Então a API deverá retornar um response informando erro ou falha na aplicação
-    E o serviço retorna uma resposta válida com status code 400
+    E o serviço retorna uma resposta válida com status code 200
