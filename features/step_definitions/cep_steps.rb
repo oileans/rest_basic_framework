@@ -27,7 +27,6 @@ end
 
 Então("a API deverá retornar um response informando erro ou falha na aplicação") do
   expect(@response_body['erro']).to eq true
-  binding.pry
   puts @response_body
 end
 
